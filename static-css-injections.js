@@ -1083,13 +1083,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     `
 
+   let s = document.createElement('style');
+   s.type = 'text/css';
+   s.innerHTML = css + customCustomCSS;
+   document.head.appendChild(s);
+
    // Insert a style tag into the wrapper view
-   cssPromise.then(css => {
-      let s = document.createElement('style');
-      s.type = 'text/css';
-      s.innerHTML = css + customCustomCSS;
-      document.head.appendChild(s);
-   });
+   // cssPromise.then(css => {
+   //    let s = document.createElement('style');
+   //    s.type = 'text/css';
+   //    s.innerHTML = css + customCustomCSS;
+   //    document.head.appendChild(s);
+   // });
+
+  // fs.readFile('/Users/sherryzhou/Documents/slack-black-theme/custom.css', 'utf-8', (err, data) => {
+  //     if(err){
+  //         alert("An error ocurred reading the file :" + err.message);
+  //         return;
+  //     }
+  //
+  //     // Change how to handle the file content
+  //     let s = document.createElement('style');
+  //     s.type = 'text/css';
+  //     s.innerHTML = data + customCustomCSS;
+  //     document.head.appendChild(s);
+  // });
 
    // Wait for each webview to load
    webviews.forEach(webview => {
