@@ -1039,7 +1039,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
    div.c-message_list__day_divider__label__pill{
     background: #abb2bf !important;
-   }   
+   }
 
    span.c-message__body,
    a.c-message__sender_link,
