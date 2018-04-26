@@ -1001,17 +1001,17 @@ document.addEventListener("DOMContentLoaded", function() {
       /* Modify these to change your theme colors: */
       --primary: #61AFEF;
       --text: #ABB2BF;
-      --background: #282C34;
-      --background-elevated: #3B4048;
+      --background: #161719;
+      --background-elevated: black;
    }
    div.c-message.c-message--light.c-message--hover
    {
    color: #fff !important;
-    background-color: #3B4048 !important;
+    background-color: black !important;
    }
 
    div.c-virtual_list__scroll_container {
-    background-color: #282C34 !important;
+    background-color: #161719 !important;
    }
    .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar), .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
     z-index: 0;
@@ -1022,7 +1022,7 @@ document.addEventListener("DOMContentLoaded", function() {
    }
 
    div.c-message:hover {
-    background-color: #3B4048 !important;
+    background-color: black !important;
    }
 
    div.c-message_attachment.c-message_attachment{
@@ -1063,7 +1063,7 @@ document.addEventListener("DOMContentLoaded", function() {
    // }
    //
    // div.c-message--light .c-message--highlight .c-message--editing .c-message--highlight_yellow_bg{
-   //  background: #3B4048 !important;
+   //  background: black !important;
    //  border: none !important;
    // }
 
