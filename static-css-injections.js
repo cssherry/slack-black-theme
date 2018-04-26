@@ -1054,7 +1054,21 @@ document.addEventListener("DOMContentLoaded", function() {
      color: #8f8f8f !important;
      border: solid;
      border-width: 1 px !important;
-    
+
+   }
+
+   /* Custom format for Sherry */
+   .c-message--ephemeral, .c-message--sli_highlight_negative {
+     background: black !important;
+     background-color: black !important;
+   }
+
+   .c-message__reply_bar--focus, .c-message__reply_bar:hover {
+      background-color: black !important;
+   }
+
+   .c-message__reply_bar--focus .c-message__reply_bar_view_thread, .c-message__reply_bar:hover .c-message__reply_bar_view_thread {
+     background-color: black !important;
    }
 
    // NOT WORKING
